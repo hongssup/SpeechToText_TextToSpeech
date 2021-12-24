@@ -64,7 +64,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = SpeechSTTViewController(nibName: "SpeechSTTViewController", bundle: nil)
-        navigationController?.pushViewController(vc, animated: true)
+        if indexPath == IndexPath(row: 0, section: 0) {
+            let vc = SpeechSTTViewController(nibName: "SpeechSTTViewController", bundle: nil)
+            navigationController?.pushViewController(vc, animated: true)
+        } else if indexPath == IndexPath(row: 0, section: 1) {
+            let vc = SpeechTTSViewController(nibName: "SpeechTTSViewController", bundle: nil)
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        
     }
 }

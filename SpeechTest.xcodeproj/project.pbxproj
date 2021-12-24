@@ -15,6 +15,8 @@
 		363A0F4527745EA60055204D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363A0F4327745EA60055204D /* LaunchScreen.storyboard */; };
 		363A0F4F27746FCC0055204D /* SpeechSTTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363A0F4D27746FCC0055204D /* SpeechSTTViewController.swift */; };
 		363A0F5027746FCC0055204D /* SpeechSTTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363A0F4E27746FCC0055204D /* SpeechSTTViewController.xib */; };
+		368ACD902775520000559A93 /* SpeechTTSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368ACD8E2775520000559A93 /* SpeechTTSViewController.swift */; };
+		368ACD912775520000559A93 /* SpeechTTSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368ACD8F2775520000559A93 /* SpeechTTSViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		363A0F4627745EA60055204D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		363A0F4D27746FCC0055204D /* SpeechSTTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSTTViewController.swift; sourceTree = "<group>"; };
 		363A0F4E27746FCC0055204D /* SpeechSTTViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeechSTTViewController.xib; sourceTree = "<group>"; };
+		368ACD8E2775520000559A93 /* SpeechTTSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTTSViewController.swift; sourceTree = "<group>"; };
+		368ACD8F2775520000559A93 /* SpeechTTSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeechTTSViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		363A0F3427745EA40055204D /* SpeechTest */ = {
 			isa = PBXGroup;
 			children = (
+				368ACD8D277551E000559A93 /* TTSSamples */,
 				363A0F4C27746E900055204D /* STTSamples */,
 				363A0F3527745EA40055204D /* AppDelegate.swift */,
 				363A0F3927745EA40055204D /* ViewController.swift */,
@@ -79,6 +84,15 @@
 				363A0F4E27746FCC0055204D /* SpeechSTTViewController.xib */,
 			);
 			path = STTSamples;
+			sourceTree = "<group>";
+		};
+		368ACD8D277551E000559A93 /* TTSSamples */ = {
+			isa = PBXGroup;
+			children = (
+				368ACD8E2775520000559A93 /* SpeechTTSViewController.swift */,
+				368ACD8F2775520000559A93 /* SpeechTTSViewController.xib */,
+			);
+			path = TTSSamples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +155,7 @@
 			files = (
 				363A0F4527745EA60055204D /* LaunchScreen.storyboard in Resources */,
 				363A0F4227745EA60055204D /* Assets.xcassets in Resources */,
+				368ACD912775520000559A93 /* SpeechTTSViewController.xib in Resources */,
 				363A0F5027746FCC0055204D /* SpeechSTTViewController.xib in Resources */,
 				363A0F3D27745EA40055204D /* Main.storyboard in Resources */,
 			);
@@ -156,6 +171,7 @@
 				363A0F3A27745EA40055204D /* ViewController.swift in Sources */,
 				363A0F3627745EA40055204D /* AppDelegate.swift in Sources */,
 				363A0F4F27746FCC0055204D /* SpeechSTTViewController.swift in Sources */,
+				368ACD902775520000559A93 /* SpeechTTSViewController.swift in Sources */,
 				363A0F4027745EA40055204D /* SpeechTest.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
