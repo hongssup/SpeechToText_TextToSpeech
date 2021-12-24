@@ -62,4 +62,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.selectionStyle = .none
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = SpeechSTTViewController(nibName: "SpeechSTTViewController", bundle: nil)
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }

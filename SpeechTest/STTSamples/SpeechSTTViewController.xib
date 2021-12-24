@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpeechSTTViewController" customModule="SpeechTest" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="dVR-Oc-eR4" id="fWP-3D-MdX"/>
+                <outlet property="textView" destination="SRG-r0-JYf" id="XmL-na-uaF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVR-Oc-eR4">
+                    <rect key="frame" x="187.5" y="159" width="39" height="30"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="말하기"/>
+                    <connections>
+                        <action selector="speechToText:" destination="-1" eventType="touchUpInside" id="tgr-2L-9X0"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ShE-2s-guE">
+                    <rect key="frame" x="28" y="269" width="358" height="358"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SRG-r0-JYf">
+                            <rect key="frame" x="4" y="0.0" width="350" height="358"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" systemColor="labelColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93180817370000002" green="0.93194204570000005" blue="0.93177884820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="SRG-r0-JYf" firstAttribute="top" secondItem="ShE-2s-guE" secondAttribute="top" id="2nj-xu-nvP"/>
+                        <constraint firstAttribute="width" secondItem="ShE-2s-guE" secondAttribute="height" multiplier="1:1" id="Hdi-Od-p7P"/>
+                        <constraint firstItem="SRG-r0-JYf" firstAttribute="leading" secondItem="ShE-2s-guE" secondAttribute="leading" constant="4" id="P72-vD-RsJ"/>
+                        <constraint firstAttribute="trailing" secondItem="SRG-r0-JYf" secondAttribute="trailing" constant="4" id="UW8-8q-nf2"/>
+                        <constraint firstAttribute="bottom" secondItem="SRG-r0-JYf" secondAttribute="bottom" id="euk-aD-4p5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ShE-2s-guE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8rm-Ct-Hhd"/>
+                <constraint firstItem="ShE-2s-guE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="M77-i3-Oc2"/>
+                <constraint firstItem="dVR-Oc-eR4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Wdh-0p-Lcs"/>
+                <constraint firstItem="ShE-2s-guE" firstAttribute="top" secondItem="dVR-Oc-eR4" secondAttribute="bottom" constant="80" id="snR-dz-imB"/>
+                <constraint firstItem="ShE-2s-guE" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="tdF-Ts-z4r"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="104"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
