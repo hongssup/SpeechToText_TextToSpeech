@@ -17,6 +17,9 @@
 		363A0F5027746FCC0055204D /* SpeechSTTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363A0F4E27746FCC0055204D /* SpeechSTTViewController.xib */; };
 		368ACD902775520000559A93 /* SpeechTTSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368ACD8E2775520000559A93 /* SpeechTTSViewController.swift */; };
 		368ACD912775520000559A93 /* SpeechTTSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368ACD8F2775520000559A93 /* SpeechTTSViewController.xib */; };
+		368ACD9427758AE300559A93 /* GoogleTTSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368ACD9227758AE300559A93 /* GoogleTTSViewController.swift */; };
+		368ACD9527758AE300559A93 /* GoogleTTSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368ACD9327758AE300559A93 /* GoogleTTSViewController.xib */; };
+		368ACD982775934E00559A93 /* GoogleSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368ACD972775934E00559A93 /* GoogleSpeechService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		363A0F4E27746FCC0055204D /* SpeechSTTViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeechSTTViewController.xib; sourceTree = "<group>"; };
 		368ACD8E2775520000559A93 /* SpeechTTSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTTSViewController.swift; sourceTree = "<group>"; };
 		368ACD8F2775520000559A93 /* SpeechTTSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeechTTSViewController.xib; sourceTree = "<group>"; };
+		368ACD9227758AE300559A93 /* GoogleTTSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleTTSViewController.swift; sourceTree = "<group>"; };
+		368ACD9327758AE300559A93 /* GoogleTTSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoogleTTSViewController.xib; sourceTree = "<group>"; };
+		368ACD972775934E00559A93 /* GoogleSpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSpeechService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +70,9 @@
 		363A0F3427745EA40055204D /* SpeechTest */ = {
 			isa = PBXGroup;
 			children = (
-				368ACD8D277551E000559A93 /* TTSSamples */,
+				368ACD962775933000559A93 /* Services */,
 				363A0F4C27746E900055204D /* STTSamples */,
+				368ACD8D277551E000559A93 /* TTSSamples */,
 				363A0F3527745EA40055204D /* AppDelegate.swift */,
 				363A0F3927745EA40055204D /* ViewController.swift */,
 				363A0F3B27745EA40055204D /* Main.storyboard */,
@@ -91,8 +98,18 @@
 			children = (
 				368ACD8E2775520000559A93 /* SpeechTTSViewController.swift */,
 				368ACD8F2775520000559A93 /* SpeechTTSViewController.xib */,
+				368ACD9227758AE300559A93 /* GoogleTTSViewController.swift */,
+				368ACD9327758AE300559A93 /* GoogleTTSViewController.xib */,
 			);
 			path = TTSSamples;
+			sourceTree = "<group>";
+		};
+		368ACD962775933000559A93 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				368ACD972775934E00559A93 /* GoogleSpeechService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +175,7 @@
 				368ACD912775520000559A93 /* SpeechTTSViewController.xib in Resources */,
 				363A0F5027746FCC0055204D /* SpeechSTTViewController.xib in Resources */,
 				363A0F3D27745EA40055204D /* Main.storyboard in Resources */,
+				368ACD9527758AE300559A93 /* GoogleTTSViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +191,8 @@
 				363A0F4F27746FCC0055204D /* SpeechSTTViewController.swift in Sources */,
 				368ACD902775520000559A93 /* SpeechTTSViewController.swift in Sources */,
 				363A0F4027745EA40055204D /* SpeechTest.xcdatamodeld in Sources */,
+				368ACD982775934E00559A93 /* GoogleSpeechService.swift in Sources */,
+				368ACD9427758AE300559A93 /* GoogleTTSViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
