@@ -19,6 +19,7 @@
 		3652F62B27798ACC000AE550 /* GoogleSTTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652F62927798ACC000AE550 /* GoogleSTTViewController.swift */; };
 		3652F62C27798ACC000AE550 /* GoogleSTTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3652F62A27798ACC000AE550 /* GoogleSTTViewController.xib */; };
 		3652F62E27798B57000AE550 /* GoogleSTTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652F62D27798B57000AE550 /* GoogleSTTService.swift */; };
+		3652F6302779949B000AE550 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652F62F2779949B000AE550 /* AudioController.swift */; };
 		368ACD902775520000559A93 /* SpeechTTSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368ACD8E2775520000559A93 /* SpeechTTSViewController.swift */; };
 		368ACD912775520000559A93 /* SpeechTTSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368ACD8F2775520000559A93 /* SpeechTTSViewController.xib */; };
 		368ACD9427758AE300559A93 /* GoogleTTSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368ACD9227758AE300559A93 /* GoogleTTSViewController.swift */; };
@@ -40,6 +41,7 @@
 		3652F62927798ACC000AE550 /* GoogleSTTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSTTViewController.swift; sourceTree = "<group>"; };
 		3652F62A27798ACC000AE550 /* GoogleSTTViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoogleSTTViewController.xib; sourceTree = "<group>"; };
 		3652F62D27798B57000AE550 /* GoogleSTTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSTTService.swift; sourceTree = "<group>"; };
+		3652F62F2779949B000AE550 /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
 		368ACD8E2775520000559A93 /* SpeechTTSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTTSViewController.swift; sourceTree = "<group>"; };
 		368ACD8F2775520000559A93 /* SpeechTTSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeechTTSViewController.xib; sourceTree = "<group>"; };
 		368ACD9227758AE300559A93 /* GoogleTTSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleTTSViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +70,6 @@
 				844BA79E53A72F2264352987 /* Pods-SpeechTest.debug.xcconfig */,
 				D1F493FD9679DE0FE986E056 /* Pods-SpeechTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -114,6 +115,7 @@
 				363A0F4E27746FCC0055204D /* SpeechSTTViewController.xib */,
 				3652F62927798ACC000AE550 /* GoogleSTTViewController.swift */,
 				3652F62A27798ACC000AE550 /* GoogleSTTViewController.xib */,
+				3652F62F2779949B000AE550 /* AudioController.swift */,
 			);
 			path = STTSamples;
 			sourceTree = "<group>";
@@ -265,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3652F6302779949B000AE550 /* AudioController.swift in Sources */,
 				363A0F3A27745EA40055204D /* ViewController.swift in Sources */,
 				363A0F3627745EA40055204D /* AppDelegate.swift in Sources */,
 				363A0F4F27746FCC0055204D /* SpeechSTTViewController.swift in Sources */,
@@ -431,7 +434,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,7 +464,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
