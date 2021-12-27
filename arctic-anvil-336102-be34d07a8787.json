@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "arctic-anvil-336102",
+  "private_key_id": "be34d07a8787a18da9a3917f92d05645c407dda5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCX7xy63fUp/36X\nkYFbFu9U66A0AkWut/aq37d7CwtvVYF+NIJWhl+4B1xK5nDn3IydhCzJDm24xbZb\n3W7dtMjSU3K0jXQ7QqxC+DoN87MUESihod+XQvVWuw1N4lWT24oPpmgsIYUx/75p\n6o7u60CNwTJvRK6zCD9I+rulUfwBAXSUm6WM3iEQYVoAu8xPk0wTiUsg+3xNNSW4\nZNYhL0FjwTVW6GZMT6exJqFUtD/mnVaAijpiuT6flZacoCiLTwkxpvTdVImyqcQq\n01/hmDkAcYb/eNyEm7lRx8oTTG84yCN0Wus2XAcA4zeNdCfGyBIR21YePCazHhfY\nHtCubob3AgMBAAECggEAJkTsxCbfN2ZrAQt9/S8wNoApOKBv49vjjlPOd/gmt7Le\nbKcWQ2wSVRzJgvY7bzOO2aguza/MNFPcpJQIdmCwisXJKTBOHBUlpbK3kMcXDtFp\nnhjTZFrRyDhSWBFQA++y/VEpgSAqWBc2Y6BYw1ZPSsVkikFPDbpgkmXReQlHBAtx\n7qXlKF6lvb7cwy+sMCoSdBCkH0PbeRLoCZiwx8W3PhkY+MClL6RFK01maB3ck7Qz\nHHTk4+mH5n4saEPvZD0VCB0QiVFARedPA6GwJW0InlbbgkoJtAU+a6Q/IgDa84qn\nkyukzwVUM8Zm6AHdFG8WGM59ijMKYiufBQYcgEnbnQKBgQDI/IHALwOYgABlBTDn\nSrkHNOMv0IQ2NDQKawojK9ody7Rdi3ZaX3kOVTLmFwtZGplyolpR0ZQ7WE3LamYB\nF7IH4GUnTXcjjHpqATEmwBxuQ9TaEdLeBw2RI5fpfY7N9JWlJhpJAc5QXAzfPVq5\n4PysJUyjPJ33znCuh8rF7FbgGwKBgQDBhWqkVEvBoq07wsS19FMfMM8vTEdvdXcr\nCPu4ulj6IM+TvV69bSsi/BZxbApUBPzYNBIolmE51ehF66b41t2Vnky/1tFVEoT5\nRNjmgnXv230wS5CT2RuzSDj38apKw4haKLQ3QEiHQdzq55YHHPJOt8Q4N5AD5stO\n3Mp4IXA6VQKBgFaM1lsqY8QCKylViO+xL+i4j7UBeE3XQSnTWnQ26CC4nh1Cd18H\nihvv+JE5Dzv5xmalH3voYosDxcx5Lx/9Uj8uFKFOLKX0UqrfhIkJZbTeJQUbc9EE\n/ISp7TsxRJPQZbjOpbcWvf/BBBIGW9F735NKJKyO5//UuJWQCHQfCHJNAoGBAJwe\nC4gCURMnL2WUnKjFMAFrmNjpSn/KXZakKp4+BuXSbmMbVECwvyn8AAcER9i8JVYt\nu7BukITd4gH2N79rZ1r6V6QzorBkvk1xkyFygb48bWP2se30KfqZ+wtbNCwYTfmd\n+LTR8TDcm2IN7eRTH88NRQitGktrdvxp9hSvtR/5AoGAZ/iJCpDlKC/nT/5XIAoN\nMFphtsntW0aVDy1CnSKNJg/fxhuREzJUiy0ri1yEeaWiF9fiq9/d7yxrznQdMUBa\n6wJYmgyqKApWAi7s5b3eaPjRcv+P2ba1QJq3lLfdw24kPFkPtOEdqCtd3WJ0xJ7x\n1cs23jBRrcBngkaCixwMOvI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "speech-to-text-api-test@arctic-anvil-336102.iam.gserviceaccount.com",
+  "client_id": "108331407005551656531",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/speech-to-text-api-test%40arctic-anvil-336102.iam.gserviceaccount.com"
+}
