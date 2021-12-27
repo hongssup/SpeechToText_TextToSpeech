@@ -20,11 +20,16 @@ class SpeechTTSViewController: UIViewController {
 
     @IBAction func textToSpeech(_ sender: Any) {
         let synthesizer = AVSpeechSynthesizer()
-        let utterance = AVSpeechUtterance(string: "말좀 해보라고. 왜 말을 못해")
-        //let utterance = AVSpeechUtterance(string: myTextView.text )
+        //let utterance = AVSpeechUtterance(string: "말좀 해보라고. 왜 말을 못해")
+        let utterance = AVSpeechUtterance(string: textView.text)
         utterance.voice = AVSpeechSynthesisVoice(language: "ko-KR")
         utterance.rate = 0.4
         //utterance.pitchMultiplier = 0.5
         synthesizer.speak(utterance)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        self.view.endEditing(true)
     }
 }

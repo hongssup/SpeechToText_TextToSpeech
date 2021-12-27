@@ -37,7 +37,7 @@ class GoogleTTSViewController: UIViewController {
             voiceType = .lowMale
         }
         
-        GoogleSpeechService.shared.speak(text: textView.text, voiceType: voiceType) {
+        GoogleTextToSpeechService.shared.speak(text: textView.text, voiceType: voiceType) {
             self.speakButton.setTitle("말하기", for: .normal)
             self.speakButton.isEnabled = true
             self.speakButton.alpha = 1
