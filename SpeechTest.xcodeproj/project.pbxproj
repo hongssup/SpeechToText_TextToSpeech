@@ -16,6 +16,11 @@
 		363A0F4527745EA60055204D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363A0F4327745EA60055204D /* LaunchScreen.storyboard */; };
 		363A0F4F27746FCC0055204D /* SpeechSTTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363A0F4D27746FCC0055204D /* SpeechSTTViewController.swift */; };
 		363A0F5027746FCC0055204D /* SpeechSTTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363A0F4E27746FCC0055204D /* SpeechSTTViewController.xib */; };
+		364F2BC4277C3D7C003F312E /* NaverSTTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F2BC2277C3D7C003F312E /* NaverSTTViewController.swift */; };
+		364F2BC5277C3D7C003F312E /* NaverSTTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364F2BC3277C3D7C003F312E /* NaverSTTViewController.xib */; };
+		364F2BC8277C3F09003F312E /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F2BC7277C3F09003F312E /* Languages.swift */; };
+		364F2BC9277C49C9003F312E /* NaverSpeech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364F2BC0277C3CEB003F312E /* NaverSpeech.framework */; };
+		364F2BCA277C49C9003F312E /* NaverSpeech.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 364F2BC0277C3CEB003F312E /* NaverSpeech.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3652F62B27798ACC000AE550 /* GoogleSTTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652F62927798ACC000AE550 /* GoogleSTTViewController.swift */; };
 		3652F62C27798ACC000AE550 /* GoogleSTTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3652F62A27798ACC000AE550 /* GoogleSTTViewController.xib */; };
 		3652F62E27798B57000AE550 /* GoogleSTTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652F62D27798B57000AE550 /* GoogleSTTService.swift */; };
@@ -26,6 +31,20 @@
 		368ACD9527758AE300559A93 /* GoogleTTSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368ACD9327758AE300559A93 /* GoogleTTSViewController.xib */; };
 		368ACD982775934E00559A93 /* GoogleTTSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368ACD972775934E00559A93 /* GoogleTTSService.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		364F2BCB277C49C9003F312E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				364F2BCA277C49C9003F312E /* NaverSpeech.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		363A0F3227745EA30055204D /* SpeechTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +57,10 @@
 		363A0F4627745EA60055204D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		363A0F4D27746FCC0055204D /* SpeechSTTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSTTViewController.swift; sourceTree = "<group>"; };
 		363A0F4E27746FCC0055204D /* SpeechSTTViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeechSTTViewController.xib; sourceTree = "<group>"; };
+		364F2BC0277C3CEB003F312E /* NaverSpeech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NaverSpeech.framework; sourceTree = "<group>"; };
+		364F2BC2277C3D7C003F312E /* NaverSTTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverSTTViewController.swift; sourceTree = "<group>"; };
+		364F2BC3277C3D7C003F312E /* NaverSTTViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NaverSTTViewController.xib; sourceTree = "<group>"; };
+		364F2BC7277C3F09003F312E /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
 		3652F62927798ACC000AE550 /* GoogleSTTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSTTViewController.swift; sourceTree = "<group>"; };
 		3652F62A27798ACC000AE550 /* GoogleSTTViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoogleSTTViewController.xib; sourceTree = "<group>"; };
 		3652F62D27798B57000AE550 /* GoogleSTTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSTTService.swift; sourceTree = "<group>"; };
@@ -58,6 +81,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29100BABDCDA978D664D540F /* Pods_SpeechTest.framework in Frameworks */,
+				364F2BC9277C49C9003F312E /* NaverSpeech.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +118,7 @@
 		363A0F3427745EA40055204D /* SpeechTest */ = {
 			isa = PBXGroup;
 			children = (
+				364F2BC6277C3EF6003F312E /* Common */,
 				368ACD962775933000559A93 /* Services */,
 				363A0F4C27746E900055204D /* STTSamples */,
 				368ACD8D277551E000559A93 /* TTSSamples */,
@@ -116,8 +141,18 @@
 				3652F62927798ACC000AE550 /* GoogleSTTViewController.swift */,
 				3652F62A27798ACC000AE550 /* GoogleSTTViewController.xib */,
 				3652F62F2779949B000AE550 /* AudioController.swift */,
+				364F2BC2277C3D7C003F312E /* NaverSTTViewController.swift */,
+				364F2BC3277C3D7C003F312E /* NaverSTTViewController.xib */,
 			);
 			path = STTSamples;
+			sourceTree = "<group>";
+		};
+		364F2BC6277C3EF6003F312E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				364F2BC7277C3F09003F312E /* Languages.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		368ACD8D277551E000559A93 /* TTSSamples */ = {
@@ -143,6 +178,7 @@
 		D7412E362FF1359FB118B99B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				364F2BC0277C3CEB003F312E /* NaverSpeech.framework */,
 				868CBEC1BA21A455CF483908 /* Pods_SpeechTest.framework */,
 			);
 			name = Frameworks;
@@ -160,6 +196,7 @@
 				363A0F2F27745EA30055204D /* Frameworks */,
 				363A0F3027745EA30055204D /* Resources */,
 				88EC7729B2A3A48E53C4FD6F /* [CP] Embed Pods Frameworks */,
+				364F2BCB277C49C9003F312E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				363A0F4527745EA60055204D /* LaunchScreen.storyboard in Resources */,
+				364F2BC5277C3D7C003F312E /* NaverSTTViewController.xib in Resources */,
 				363A0F4227745EA60055204D /* Assets.xcassets in Resources */,
 				3652F62C27798ACC000AE550 /* GoogleSTTViewController.xib in Resources */,
 				368ACD912775520000559A93 /* SpeechTTSViewController.xib in Resources */,
@@ -272,10 +310,12 @@
 				363A0F3627745EA40055204D /* AppDelegate.swift in Sources */,
 				363A0F4F27746FCC0055204D /* SpeechSTTViewController.swift in Sources */,
 				3652F62E27798B57000AE550 /* GoogleSTTService.swift in Sources */,
+				364F2BC8277C3F09003F312E /* Languages.swift in Sources */,
 				368ACD902775520000559A93 /* SpeechTTSViewController.swift in Sources */,
 				363A0F4027745EA40055204D /* SpeechTest.xcdatamodeld in Sources */,
 				368ACD982775934E00559A93 /* GoogleTTSService.swift in Sources */,
 				368ACD9427758AE300559A93 /* GoogleTTSViewController.swift in Sources */,
+				364F2BC4277C3D7C003F312E /* NaverSTTViewController.swift in Sources */,
 				3652F62B27798ACC000AE550 /* GoogleSTTViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +467,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QAT46LHJF5;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpeechTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -445,6 +490,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -457,6 +503,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QAT46LHJF5;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpeechTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -475,6 +526,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};

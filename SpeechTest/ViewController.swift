@@ -67,6 +67,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath == IndexPath(row: 0, section: 0) {
             let vc = SpeechSTTViewController(nibName: "SpeechSTTViewController", bundle: nil)
             navigationController?.pushViewController(vc, animated: true)
+        } else if indexPath == IndexPath(row: 1, section: 0) {
+            let vc = NaverSTTViewController(nibName: "NaverSTTViewController", bundle: nil)
+            navigationController?.pushViewController(vc, animated: true)
         } else if indexPath == IndexPath(row: 2, section: 0) {
             let vc = GoogleSTTViewController(nibName: "GoogleSTTViewController", bundle: nil)
             navigationController?.pushViewController(vc, animated: true)
