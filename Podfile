@@ -7,5 +7,6 @@ target 'SpeechTest' do
 
   # Pods for SpeechTest
   pod 'googleapis', :path => '.'
+  pod 'Alamofire'
 
 end

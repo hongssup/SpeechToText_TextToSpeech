@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NaverTTSViewController" customModule="SpeechTest" customModuleProvider="target">
+            <connections>
+                <outlet property="speakBtn" destination="A1h-WL-v32" id="QYM-4g-dIp"/>
+                <outlet property="textView" destination="aOt-YZ-pgZ" id="K2f-AI-vpS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZIp-4B-JZI">
+                    <rect key="frame" x="28" y="189" width="358" height="358"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aOt-YZ-pgZ">
+                            <rect key="frame" x="4" y="0.0" width="350" height="358"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" systemColor="labelColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93180817370000002" green="0.93194204570000005" blue="0.93177884820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="aOt-YZ-pgZ" secondAttribute="bottom" id="2kT-M3-oE2"/>
+                        <constraint firstAttribute="trailing" secondItem="aOt-YZ-pgZ" secondAttribute="trailing" constant="4" id="NdO-9P-WKc"/>
+                        <constraint firstItem="aOt-YZ-pgZ" firstAttribute="top" secondItem="ZIp-4B-JZI" secondAttribute="top" id="O02-NY-dfz"/>
+                        <constraint firstAttribute="width" secondItem="ZIp-4B-JZI" secondAttribute="height" multiplier="1:1" id="eju-Xv-3ED"/>
+                        <constraint firstItem="aOt-YZ-pgZ" firstAttribute="leading" secondItem="ZIp-4B-JZI" secondAttribute="leading" constant="4" id="oO9-KA-B1x"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CQA-kj-W90">
+                    <rect key="frame" x="28" y="567" width="358" height="44"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="o2b-7U-HB4">
+                            <rect key="frame" x="0.0" y="0.0" width="175" height="45"/>
+                            <segments>
+                                <segment title="여자"/>
+                                <segment title="남자"/>
+                            </segments>
+                        </segmentedControl>
+                        <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1K-Uc-kkG">
+                            <rect key="frame" x="183" y="0.0" width="175" height="44"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="나라">
+                                <color key="titleColor" systemColor="labelColor"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="oIN-PJ-Li0"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zde-XB-YRh">
+                    <rect key="frame" x="127" y="659" width="160" height="48"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1h-WL-v32">
+                            <rect key="frame" x="0.0" y="0.0" width="160" height="48"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="말하기">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickBtn:" destination="-1" eventType="touchUpInside" id="fAW-2C-j8N"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="tintColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="A1h-WL-v32" secondAttribute="trailing" id="RPf-an-2kC"/>
+                        <constraint firstAttribute="height" constant="48" id="VoB-kq-XQp"/>
+                        <constraint firstAttribute="bottom" secondItem="A1h-WL-v32" secondAttribute="bottom" id="lx0-um-nFo"/>
+                        <constraint firstItem="A1h-WL-v32" firstAttribute="top" secondItem="Zde-XB-YRh" secondAttribute="top" id="sPj-et-UUz"/>
+                        <constraint firstAttribute="width" constant="160" id="wuh-1E-dZD"/>
+                        <constraint firstItem="A1h-WL-v32" firstAttribute="leading" secondItem="Zde-XB-YRh" secondAttribute="leading" id="zOq-z2-2mw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ZIp-4B-JZI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="Hre-RT-tpP"/>
+                <constraint firstItem="CQA-kj-W90" firstAttribute="top" secondItem="ZIp-4B-JZI" secondAttribute="bottom" constant="20" id="KdG-S5-5iB"/>
+                <constraint firstItem="CQA-kj-W90" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="LY3-18-AB9"/>
+                <constraint firstItem="CQA-kj-W90" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="P4N-0T-J0i"/>
+                <constraint firstItem="Zde-XB-YRh" firstAttribute="top" secondItem="CQA-kj-W90" secondAttribute="bottom" constant="48" id="YH7-WJ-gCh"/>
+                <constraint firstItem="Zde-XB-YRh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hji-S5-afF"/>
+                <constraint firstItem="ZIp-4B-JZI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-80" id="nW9-ma-WXb"/>
+                <constraint firstItem="ZIp-4B-JZI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qSp-c8-dIg"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="65"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
