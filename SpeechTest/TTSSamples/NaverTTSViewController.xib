@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,8 +13,13 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NaverTTSViewController" customModule="SpeechTest" customModuleProvider="target">
             <connections>
                 <outlet property="speakBtn" destination="A1h-WL-v32" id="QYM-4g-dIp"/>
+                <outlet property="speakView" destination="Zde-XB-YRh" id="dhq-4p-gum"/>
                 <outlet property="textView" destination="aOt-YZ-pgZ" id="K2f-AI-vpS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="voiceGenderControl" destination="o2b-7U-HB4" id="fiw-9X-7KR"/>
+                <outlet property="voiceNameBtn" destination="Q1K-Uc-kkG" id="xJE-Lt-XlJ"/>
+                <outlet property="voiceNameLabel" destination="SkX-UE-ucH" id="K5D-eZ-Xf6"/>
+                <outlet property="voiceNameView" destination="oSB-LU-LzC" id="RYY-0r-yfm"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -41,23 +47,51 @@
                         <constraint firstItem="aOt-YZ-pgZ" firstAttribute="leading" secondItem="ZIp-4B-JZI" secondAttribute="leading" constant="4" id="oO9-KA-B1x"/>
                     </constraints>
                 </view>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CQA-kj-W90">
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="CQA-kj-W90">
                     <rect key="frame" x="28" y="567" width="358" height="44"/>
                     <subviews>
                         <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="o2b-7U-HB4">
-                            <rect key="frame" x="0.0" y="0.0" width="175" height="45"/>
+                            <rect key="frame" x="0.0" y="0.0" width="173" height="45"/>
                             <segments>
                                 <segment title="여자"/>
                                 <segment title="남자"/>
                             </segments>
+                            <connections>
+                                <action selector="segChange:" destination="-1" eventType="valueChanged" id="QGI-Yh-3cM"/>
+                            </connections>
                         </segmentedControl>
-                        <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1K-Uc-kkG">
-                            <rect key="frame" x="183" y="0.0" width="175" height="44"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" title="나라">
-                                <color key="titleColor" systemColor="labelColor"/>
-                            </state>
-                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSB-LU-LzC">
+                            <rect key="frame" x="185" y="0.0" width="173" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나라" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkX-UE-ucH">
+                                    <rect key="frame" x="69.5" y="13" width="26" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1K-Uc-kkG">
+                                    <rect key="frame" x="0.0" y="0.0" width="165" height="44"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" red="0.0078426245600000007" green="0.77922540900000004" blue="0.35539549590000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal">
+                                        <color key="titleColor" red="0.0078426245600000007" green="0.77922540900000004" blue="0.35539549590000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onClickBtn:" destination="-1" eventType="touchUpInside" id="FJ1-N8-s85"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Q1K-Uc-kkG" secondAttribute="trailing" constant="8" id="Cnc-DW-Soo"/>
+                                <constraint firstItem="Q1K-Uc-kkG" firstAttribute="top" secondItem="oSB-LU-LzC" secondAttribute="top" id="F7v-Kk-RL1"/>
+                                <constraint firstItem="SkX-UE-ucH" firstAttribute="centerX" secondItem="oSB-LU-LzC" secondAttribute="centerX" constant="-4" id="Puq-K7-x2c"/>
+                                <constraint firstItem="SkX-UE-ucH" firstAttribute="centerY" secondItem="oSB-LU-LzC" secondAttribute="centerY" id="SqP-z1-dvc"/>
+                                <constraint firstAttribute="bottom" secondItem="Q1K-Uc-kkG" secondAttribute="bottom" id="a0T-CP-lTD"/>
+                                <constraint firstItem="Q1K-Uc-kkG" firstAttribute="leading" secondItem="oSB-LU-LzC" secondAttribute="leading" id="oQt-XZ-MbR"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="oIN-PJ-Li0"/>
@@ -78,7 +112,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" systemColor="tintColor"/>
+                    <color key="backgroundColor" red="0.0078426245600000007" green="0.77922540900000004" blue="0.35539549590000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="A1h-WL-v32" secondAttribute="trailing" id="RPf-an-2kC"/>
                         <constraint firstAttribute="height" constant="48" id="VoB-kq-XQp"/>
@@ -105,14 +139,12 @@
         </view>
     </objects>
     <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
