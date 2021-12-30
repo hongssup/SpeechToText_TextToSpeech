@@ -8,9 +8,6 @@
 import Foundation
 import googleapis
 
-let API_KEY : String = "YOUR_API_KEY"
-let HOST = "speech.googleapis.com"
-
 typealias SpeechRecognitionCompletionHandler = (StreamingRecognizeResponse?, NSError?) -> (Void)
 
 class SpeechRecognitionService {
@@ -26,7 +23,7 @@ class SpeechRecognitionService {
   func streamAudioData(_ audioData: NSData, completion: @escaping SpeechRecognitionCompletionHandler) {
     if (!streaming) {
       // if we aren't already streaming, set up a gRPC connection
-      client = Speech(host:HOST)
+      client = Speech(host: Google_STT_HOST)
         print("client: \(String(describing: client))")
       writer = GRXBufferedPipe()
       call = client.rpcToStreamingRecognize(withRequestsWriter: writer,
@@ -35,7 +32,7 @@ class SpeechRecognitionService {
                                               completion(response, error as? NSError)
       })
       // authenticate using an API key obtained from the Google Cloud Console
-      call.requestHeaders.setObject(NSString(string:API_KEY),
+      call.requestHeaders.setObject(NSString(string:Google_API_KEY),
                                     forKey:NSString(string:"X-Goog-Api-Key"))
       // if the API key has a bundle ID restriction, specify the bundle ID like this
       call.requestHeaders.setObject(NSString(string:Bundle.main.bundleIdentifier!),

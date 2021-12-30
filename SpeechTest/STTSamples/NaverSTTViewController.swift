@@ -9,9 +9,6 @@ import UIKit
 import NaverSpeech
 import AVFoundation
 
-/*네이버 클라우드 플랫폼 (https://www.ncloud.com/)에서 앱 등록을 한 후 발급받은 client id가 필요합니다.*/
-let ClientID = ""
-
 /////////////////////////////////////////////////////////////////////
 //음성인식기를 auto mode로 동작 시키는 sample app
 /////////////////////////////////////////////////////////////////////
@@ -31,7 +28,7 @@ class NaverSTTViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let configuration = NSKRecognizerConfiguration(clientID: ClientID)
+        let configuration = NSKRecognizerConfiguration(clientID: NAVER_CLIENT_ID)
         configuration?.canQuestionDetected = true
         self.speechRecognizer = NSKRecognizer(configuration: configuration)
         self.speechRecognizer.delegate = self

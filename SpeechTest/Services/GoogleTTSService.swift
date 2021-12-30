@@ -16,9 +16,6 @@ enum VoiceType: String {
     case standardMale = "ko-KR-Wavenet-D"
 }
 
-let ttsAPIUrl = "https://texttospeech.googleapis.com/v1beta1/text:synthesize"
-let APIKey = "YOUR_API_KEY"
-
 class GoogleTextToSpeechService: NSObject, AVAudioPlayerDelegate {
     
     static let shared = GoogleTextToSpeechService()
@@ -37,8 +34,8 @@ class GoogleTextToSpeechService: NSObject, AVAudioPlayerDelegate {
         
         DispatchQueue.global(qos: .background).async {
             let postData = self.buildPostData(text: text, voiceType: voiceType)
-            let headers = ["X-Goog-Api-Key": APIKey, "Content-Type": "application/json; charset=utf-8"]
-            let response = self.makePOSTRequest(url: ttsAPIUrl, postData: postData, headers: headers)
+            let headers = ["X-Goog-Api-Key": Google_API_KEY, "Content-Type": "application/json; charset=utf-8"]
+            let response = self.makePOSTRequest(url: Google_TTS_URL, postData: postData, headers: headers)
 
             // Get the `audioContent` (as a base64 encoded string) from the response.
             guard let audioContent = response["audioContent"] as? String else {
