@@ -1,6 +1,17 @@
-# SpeechToText_TextToSpeech
-Apple Naver Google Kakao STT &amp; TTS 비교 테스트
+# SpeechToText_TextToSpeech iOS Demo
+>Apple Naver Google STT &amp; TTS 비교 테스트
 
+
+## Requirements
+- iOS 13.0+
+- Swift 5
+
+## Installation
+### Cocoapods
+‘’’ 
+pod 'googleapis', :path => '.'
+pod 'Alamofire'
+‘’’
 
 ## References
 If you want to read more explanations about this project, please refer to the following post:
