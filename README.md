@@ -8,10 +8,10 @@
 
 ## Installation
 ### Cocoapods
-‘’’ 
+```
 pod 'googleapis', :path => '.'
 pod 'Alamofire'
-‘’’
+```
 
 ## References
 If you want to read more explanations about this project, please refer to the following post:
