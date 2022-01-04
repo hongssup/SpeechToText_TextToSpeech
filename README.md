@@ -1,10 +1,16 @@
 # SpeechToText_TextToSpeech iOS Demo
 >Apple Naver Google STT &amp; TTS 비교 테스트
+<p>
+  <a href="https://developer.apple.com/documentation/speech"><img src="https://img.shields.io/badge/Apple%20Speech-000000?style=flat-square&logo=Apple&logoColor=white&link=https://developer.apple.com/documentation/speech"/></a>&nbsp
+  <a href="https://www.ncloud.com/"><img src="https://img.shields.io/badge/Naver%20CLOVA-03C75A?style=flat-square&logo=Naver&logoColor=white&link=https://www.ncloud.com/"/></a>&nbsp
+  <a href="https://cloud.google.com/"><img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat-square&logo=GoogleCloud&logoColor=white&link=https://cloud.google.com/"/></a>
+</p>
 
 
 ## Requirements
-- iOS 13.0+
-- Swift 5
+- ![iOS badge](https://img.shields.io/badge/iOS-13.0%2B-green)
+- ![Swift badge](https://img.shields.io/badge/Swift-5-orange)
+- ![Xcode badge](https://img.shields.io/badge/Xcode-13.0-blue)
 
 ## Installation
 ### Cocoapods
